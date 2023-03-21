@@ -2,7 +2,6 @@ import BoxerCard from '@/components/boxerCard'
 import { apiUrl } from '@/api/apiUrl'
 
 export default function boxers({ data }) {
-  console.log(data)
   return(
     <div>
       {data.map((boxer) => (
