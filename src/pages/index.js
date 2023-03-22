@@ -1,17 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '@/styles/Home.module.css'
+import Navbar from '@/components/navbar'
 
-export default function Home({ data }) {
+export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
+    <Head>
+      <Navbar/>
+    </Head>
+      <h1 className='text-3xl font-bold'>
         Hajime no ippo!
       </h1>
-      <Link href='/boxers'>
-        Boxers
-      </Link>
     </>
   )
 }
