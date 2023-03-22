@@ -1,23 +1,28 @@
 import BoxerCard from '@/components/boxerCard'
+import Navbar from '@/components/navbar'
 import { apiUrl } from '@/api/apiUrl'
 
 export default function boxers({ data }) {
   return(
-    <div>
-      {data.map((boxer) => (
-        <BoxerCard
-          key={boxer.id}
-          name={boxer.name}
-          totalMatches={boxer.totalMatches}
-          wins={boxer.wins}
-          losses={boxer.losses}
-          draws={boxer.draws}
-          weightClass={boxer.weightClass}
-          winsByKO={boxer.winsByKO}
-          image={`${apiUrl}${boxer.image}`}
-        />
-      ))}
-    </div>
+    <>
+      <Navbar/>
+      <section className='flex flex-wrap flex-col content-center md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 2xl:grid 2xl:grid-cols-4 gap-5 justify-items-center'>
+        {data.map((boxer) => (
+          <BoxerCard
+            key={boxer.id}
+            name={boxer.name}
+            totalMatches={boxer.totalMatches}
+            wins={boxer.wins}
+            losses={boxer.losses}
+            draws={boxer.draws}
+            weightClass={boxer.weightClass}
+            winsByKO={boxer.winsByKO}
+            country={boxer.country}
+            image={`${apiUrl}${boxer.image}`}
+          />
+        ))}
+      </section>
+    </>
   )
 }
 
