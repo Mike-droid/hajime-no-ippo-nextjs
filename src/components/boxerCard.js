@@ -15,7 +15,7 @@ const BoxerCard = ({ name, totalMatches, wins, losses, draws, weightClass, winsB
   return (
     <div className={`flex flex-col flex-wrap items-center w-1/3 m-0 ${styles.boxerCard}`}>
       <Image src={imageUrl} alt={name} width={100} height={100}></Image>
-      <h2>{name}</h2>
+      <h2 className='text-center'>{name}</h2>
       <ShowInfoButton onClick={handleShowInfo} showInfo={showInfo} />
       {
         showInfo &&
