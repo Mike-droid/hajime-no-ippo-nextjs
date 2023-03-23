@@ -52,6 +52,7 @@ export default function Boxers({ data }) {
         {filteredData.map((boxer) => (
           <BoxerCard
             key={boxer.id}
+            id={boxer.id}
             name={boxer.name}
             totalMatches={boxer.totalMatches}
             wins={boxer.wins}
