@@ -35,10 +35,10 @@ export default function Boxers({ data }) {
           placeholder='Search boxers by name'
           value={searchTerm}
           onChange={handleInputChange}
-          className='p-2'
+          className='p-3 rounded-full my-4'
         />
         <div>
-          <label htmlFor='country-select'>Filter by country:</label>
+          <label htmlFor='country-select' className='mr-1'>Filter by country:</label>
           <select id='country-select' value={selectedCountry} onChange={handleCountryChange}>
             <option value=''>All</option>
             <option value='Mexico'>Mexico</option>
