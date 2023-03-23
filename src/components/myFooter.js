@@ -8,11 +8,11 @@ export const MyFooter = () => {
       <a className='text-cyan-400 text-center' href='https://github.com/Mike-droid' target='_blank'>
         Made by: Mike-droid
       </a>
-      <a className='text-cyan-400 flex flex-row justify-center' href='https://github.com/Mike-droid/hajime-no-ippo-nextjs'>
+      <a className='text-cyan-400 flex flex-row justify-center' href='https://github.com/Mike-droid/hajime-no-ippo-nextjs' target='_blank'>
         <Image priority src={githubImage} alt='Github icon' width={30} height={30} className='invert'/>
         Github repository of this project
       </a>
-      <a className='text-cyan-400 flex flex-row justify-center' href='https://github.com/Mike-droid/hajime-no-ippo-api'>
+      <a className='text-cyan-400 flex flex-row justify-center' href='https://github.com/Mike-droid/hajime-no-ippo-api' target='_blank'>
         <Image priority src={githubImage} alt='Github icon' width={30} height={30} className='invert'/>
         Github repository of the API
       </a>
